@@ -1,0 +1,33 @@
+<?php
+/**
+ * @file
+ * Code for the luggage_bean_menu feature.
+ */
+
+include_once 'luggage_bean_menu.features.inc';
+
+/**
+ * Implements hook_theme().
+ */
+function luggage_bean_menu_theme($existing, $type, $theme, $path) {
+  $theme['bean__menu'] = array(
+    'template' => 'bean--menu',
+    'path' => drupal_get_path('module', 'luggage_bean_menu') . '/templates'
+  );
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function luggage_bean_menu_form_bean_form_alter(&$form, &$form_state, $form_id) {
+  if ($form['#bundle'] == "menu") {
+    // Hide default bean type field since it's confusing and editor won't change it.
+    $form['view_mode'] = [
+      '#type' => 'hidden',
+    ];
+    //Add better description to label
+    $form['label']['#description'] = t('This text will be used to name your menu. Users of your site will not see this.');
+    //Add better description to title
+    $form['title']['#description'] = t('This text will be what users see above your menu. The &lt;em&gt;, &lt;strong&gt;, &lt;i&gt; and &lt;b&gt; HTML tags are allowed, all others will be filtered out.');
+  }
+}
