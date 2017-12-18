@@ -61,9 +61,45 @@ function luggage_bean_menu_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'bean-menu-field_menu_orientation'.
+  $field_instances['bean-menu-field_menu_orientation'] = array(
+    'bundle' => 'menu',
+    'default_value' => array(
+      0 => array(
+        'value' => 'bean-menu_vertical',
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 1,
+      ),
+    ),
+    'entity_type' => 'bean',
+    'field_name' => 'field_menu_orientation',
+    'label' => 'Menu Orientation',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 2,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Link(s)');
+  t('Menu Orientation');
 
   return $field_instances;
 }

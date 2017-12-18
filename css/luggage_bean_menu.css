@@ -1,0 +1,42 @@
+/* ----------------------- */
+/* Menu Beans
+/* ----------------------- */
+
+.bean-menu_title {
+  font-size: 1.25rem;
+}
+
+.bean-menu ul {
+  list-style: none;
+  margin: 1rem 0;
+  padding: 0;
+}
+
+.bean-menu li {
+  margin: 0;
+  padding: 0;
+}
+
+.bean-menu.bean-menu_vertical a {
+  display: block;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-decoration: none;
+  border-bottom: 1px solid #ddd;
+}
+
+.bean-menu.bean-menu_vertical a.active {
+  color: #000;
+}
+
+.bean-menu.bean-menu_horizontal ul {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #ddd;
+}
+
+.bean-menu.bean-menu_horizontal a {
+  display: block;
+  padding: 0.5rem 0.75rem;
+  text-decoration: none;
+}
