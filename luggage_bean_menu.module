@@ -10,10 +10,12 @@ include_once 'luggage_bean_menu.features.inc';
  * Implements hook_theme().
  */
 function luggage_bean_menu_theme($existing, $type, $theme, $path) {
-  $theme['bean__menu'] = array(
+  $themes['bean__menu'] = array(
     'template' => 'bean--menu',
     'path' => drupal_get_path('module', 'luggage_bean_menu') . '/templates'
   );
+  
+  return $themes;
 }
 
 /**
