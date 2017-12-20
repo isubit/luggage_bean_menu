@@ -2,10 +2,6 @@
 /* Menu Beans
 /* ----------------------- */
 
-.bean-menu_title {
-  font-size: 1.25rem;
-}
-
 .bean-menu ul {
   list-style: none;
   margin: 1rem 0;
@@ -26,7 +22,8 @@
 }
 
 .bean-menu.bean-menu_vertical a.active {
-  color: #000;
+  color: #cc0000;
+  font-weight: bold;
 }
 
 .bean-menu.bean-menu_horizontal ul {
@@ -39,4 +36,11 @@
   display: block;
   padding: 0.5rem 0.75rem;
   text-decoration: none;
+}
+
+.bean-menu.bean-menu_horizontal a.active {
+  margin-bottom: -1px;
+  background: #eee;
+  border: 1px solid #ddd;
+  border-radius: 2px 2px 0 0;
 }
