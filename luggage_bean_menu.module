@@ -43,4 +43,5 @@ function luggage_bean_menu_preprocess_html(&$vars) {
   if ($theme == 'suitcase_interim') {
     drupal_add_css(drupal_get_path('module', 'luggage_bean_menu') . '/css/luggage_bean_menu.css', array('group' => 200));
   }
+  drupal_add_js(drupal_get_path('module', 'luggage_bean_menu') . '/js/luggage_bean_menu.js');
 }
