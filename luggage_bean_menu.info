@@ -15,3 +15,7 @@ features[field_base][] = field_menu_link
 features[field_base][] = field_menu_orientation
 features[field_instance][] = bean-menu-field_menu_link
 features[field_instance][] = bean-menu-field_menu_orientation
+features[user_permission][] = create any menu bean
+features[user_permission][] = delete any menu bean
+features[user_permission][] = edit any menu bean
+features[user_permission][] = view any menu bean
