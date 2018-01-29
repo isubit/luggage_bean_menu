@@ -33,6 +33,7 @@ function luggage_bean_menu_user_default_permissions() {
     'name' => 'edit any menu bean',
     'roles' => array(
       'bean editor' => 'bean editor',
+      'content editor' => 'content editor',
     ),
     'module' => 'bean',
   );
