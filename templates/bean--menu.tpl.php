@@ -1,4 +1,7 @@
 <nav role="navigation" class="bean-menu <?php print $bean->field_menu_orientation['und'][0]['value'] ?>">
+
+  <?php print render($title_suffix) ?>
+  
   <?php if ($bean->field_menu_link) :?>
     <ul>
       <?php $items = field_get_items('bean', $bean, 'field_menu_link');
