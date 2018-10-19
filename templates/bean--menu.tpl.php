@@ -3,7 +3,7 @@
   <?php print render($title_suffix) ?>
   
   <?php if ($bean->field_menu_link) :?>
-    <ul>
+    <ul class="bean-menu_list">
       <?php $items = field_get_items('bean', $bean, 'field_menu_link');
       foreach ($items as $item) {
         echo'<li><a href="' . $item['url'] . '">' . $item['title'] . '</a></li>';
