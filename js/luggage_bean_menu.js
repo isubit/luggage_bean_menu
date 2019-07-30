@@ -3,9 +3,10 @@
 $(document).ready(function() {
 
   $(function() {
-    var currentUrl = window.location.href;
-    currentUrl = currentUrl.replace(/#/, "");
-    $('nav.bean-menu a[href|="' + currentUrl + '"]').addClass('active');
+    var url = window.location.href;
+    var slug = url.split('/').reverse()[0];
+    slug = slug.replace(/#/, "");
+    $('nav.bean-menu a[href|="' + slug + '"]').addClass('active');
   });
 
 });
